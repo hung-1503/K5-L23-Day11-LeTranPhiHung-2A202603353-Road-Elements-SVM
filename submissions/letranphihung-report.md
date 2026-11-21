@@ -17,7 +17,7 @@
 | Thuộc tính | Các tên thuộc tính, kiểu và tập giá trị trong XML khớp taxonomy Road v1.0. Các thay đổi thuộc tính trong revision 2 được ghi ở mục 4 và 5. |
 | Bốn tag | 28/28 ảnh có đủ `camera`, `timeofday`, `weather`, `source`. Đã sửa bốn giá trị camera sai. Revision 2 có 28/28 tag camera đúng. |
 
-Để kết thúc polyline, chọn **Polyline → Shape**, đặt điểm từ gần xe ra xa rồi nhấn **N**. Để gắn tag, chọn công cụ **Tag**, đặt `camera` trước, chọn thuộc tính `value` trong **Details**, sau đó lặp lại với ba tag còn lại và lưu bằng **Ctrl+S**. [Hướng dẫn thao tác của lab](docs/huong_dan_cvat_bang_hinh.md)
+Để kết thúc polyline, chọn **Polyline → Shape**, đặt điểm từ gần xe ra xa rồi nhấn **N**. Để gắn tag, chọn công cụ **Tag**, đặt `camera` trước, chọn thuộc tính `value` trong **Details**, sau đó lặp lại với ba tag còn lại và lưu bằng **Ctrl+S**. [Hướng dẫn thao tác của lab](../docs/huong_dan_cvat_bang_hinh.md)
 
 ## 2. Số lượng đã gán
 
@@ -41,7 +41,7 @@ Hai ZIP có **367 shape** và **112 tag**. Tám ảnh thêm được đếm riê
 
 ## 4. Phiếu QC 1 nhận được và kết quả sửa
 
-**Lê Tuấn Anh quyết định Rework ngày 21/11/2026.** Phiếu revision 1 kiểm A01, A04, A08, A11, B02 và B06. Kết quả là **4 lỗi nặng, 18 lỗi chính trên 122 nhãn (14,8%) và 0 lỗi nhẹ**. [Phiếu Tuấn Anh lập cho lô của Hùng](letuananh-qc1-for-letranphihung.md)
+**Lê Tuấn Anh quyết định Rework ngày 21/11/2026.** Phiếu revision 1 kiểm A01, A04, A08, A11, B02 và B06. Kết quả là **4 lỗi nặng, 18 lỗi chính trên 122 nhãn (14,8%) và 0 lỗi nhẹ**. Phiếu nhận: `letuananh-qc1-for-letranphihung.md`.
 
 | Mã | Số lỗi trên phiếu | Phản hồi và thay đổi trong revision 2 |
 | --- | ---: | --- |
@@ -75,25 +75,25 @@ Ngoài các lỗi trên phiếu, đã bổ sung L1 ở A03 và A13, sửa màu h
 
 ### Manifest bàn giao
 
-Manifest revision 2 lấy số byte và SHA-256 từ hai ZIP đã sửa. Hai ZIP và manifest revision 1 được lưu trong `r1/`. Bản sửa thực hiện trực tiếp trên XML export. Số shape trong cột job và ảnh chụp ở mục 6 lấy từ CVAT trước khi sửa. Chưa kiểm lại bằng cách nhập revision 2 vào CVAT. [Manifest revision 2](letranphihung-manifest.json)
+Manifest revision 2 lấy số byte và SHA-256 từ hai ZIP đã sửa. Hai ZIP và manifest revision 1 được lưu trong `../r1/`. Bản sửa thực hiện trực tiếp trên XML export. Số shape trong cột job và ảnh chụp ở mục 6 lấy từ CVAT trước khi sửa. Chưa kiểm lại bằng cách nhập revision 2 vào CVAT. [Manifest revision 2](letranphihung-manifest.json)
 
 ## 6. Ảnh chụp màn hình
 
 **1. Project Day11, bảng Labels.** Sáu label hình và bốn tag hiển thị trong Constructor.
 
-Bản chụp lưu trên máy làm bài tại `docs/images/letranphihung/01-project-labels.png`.
+![Bảng Labels của project Day11](images/01-project-labels.png)
 
 **2. Front A12, job 20.** Trên ảnh có làn, vùng lái, vạch qua đường và các box đèn, biển. Bảng Objects hiển thị 21 mục gồm 17 shape và 4 tag.
 
-Bản chụp lưu trên máy làm bài tại `docs/images/letranphihung/02-front-a12.jpg`.
+![Ảnh A12 với nhãn đường và đèn biển trong CVAT](images/02-front-a12.jpg)
 
 **3. Fisheye B06, job 21.** Bên phải là phần phóng to từ cùng ảnh chụp màn hình để nhìn các polyline theo cung. Ảnh chụp từ job trước khi cập nhật tag camera trong revision 2.
 
-Bản chụp lưu trên máy làm bài tại `docs/images/letranphihung/03-fisheye-b06.jpg`.
+![Ảnh B06 và phần phóng to polyline cong](images/03-fisheye-b06.jpg)
 
 **4. XML trong bản export front.** Đoạn trích của `lane#9` ở A11 cho thấy dãy điểm và bốn thuộc tính của vạch R1 dùng ở mục 8.
 
-Bản chụp lưu trên máy làm bài tại `docs/images/letranphihung/04-xml-a11.png`.
+![Đoạn XML của polyline R1 ở A11](images/04-xml-a11.png)
 
 ## 7. Tự đánh giá
 

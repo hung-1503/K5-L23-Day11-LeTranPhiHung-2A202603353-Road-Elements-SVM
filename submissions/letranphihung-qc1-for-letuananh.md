@@ -80,4 +80,4 @@ Cả hai ZIP mở được và mỗi ZIP chỉ chứa `annotations.xml` phiên b
 
 **Rework.** Mẫu có **0 lỗi nặng, 12 lỗi chính / 77 nhãn = 15,58%, 0 lỗi nhẹ** và **1 ca chờ lead**. Tỉ lệ lỗi chính vượt ngưỡng 5% ngay cả khi coach miễn cả hai cảnh báo A05.
 
-Lint toàn lô đưa ra 5 cảnh báo QC1-02 ở A05 (hai phía), A06 (R1), A07 (L1) và A09 (R1). Danh sách lỗi trên chỉ tính các lỗi đã xác nhận trực quan trong sáu ảnh mẫu. [Thang mức lỗi và luật quyết định](docs/qc_severity_road_v1.0.md)
+Lint toàn lô đưa ra 5 cảnh báo QC1-02 ở A05 (hai phía), A06 (R1), A07 (L1) và A09 (R1). Danh sách lỗi trên chỉ tính các lỗi đã xác nhận trực quan trong sáu ảnh mẫu. [Thang mức lỗi và luật quyết định](../docs/qc_severity_road_v1.0.md)
